@@ -1,7 +1,8 @@
-# Getting Started with Create React App
+# Tinder, but for movies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was inspirred by an idea i hear on tiktok, and of cause Tinder [Create React App](https://github.com/facebook/create-react-app).
 
+(*Disclaimer*:)
 ## Available Scripts
 
 In the project directory, you can run:
