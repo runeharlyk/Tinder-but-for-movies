@@ -60,7 +60,7 @@ const Swiping = () =>{
           setGenreNames(genres.data.genres);
           setinterests(getGenreInterests());
         const result = await axios(
-            `https://api.themoviedb.org/3/discover/movie?api_key=a9d0af555a3bf6a117089d98841fcd0e&language=en&page=${pageN}&vote_average.gte=6.9&sort_by=popularity.desx&include_video=true`, 
+            `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=a9d0af555a3bf6a117089d98841fcd0e&language=en&page=${pageN}&vote_average.gte=6.9&include_video=true`, 
             //&with_genres=${getGenreInterests().genres.join()}
           );
         setMovies(movies => result.data.results.concat(movies));   
