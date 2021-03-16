@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./Features/Header/Header"
+import Swiping from "./Features/Swiping/Swiping"
+import Likes from "./Features/Likes/Likes"
+import Matches from "./Features/Matches/Matches"
+import Profile from "./Features/Profile/Profile"
+
+//https://developers.themoviedb.org/3/genres/get-movie-list
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router className="App">
+      <Header></Header>
+      <Switch>
+          <Route exact path="/">
+            <Redirect to="/app/matches" />
+         </Route>
+          <Route path="/app/recs">
+            <Swiping />
+          </Route>
+          <Route path="/app/likes">
+            <Likes />
+          </Route>
+          <Route path="/app/matches">
+            <Matches />
+          </Route>
+          <Route path="/app/profile">
+            <Profile />
+          </Route>
+      </Switch>
+    </Router>
   );
 }
 

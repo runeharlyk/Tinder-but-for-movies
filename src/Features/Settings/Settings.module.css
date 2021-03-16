@@ -1,0 +1,105 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    position: absolute;
+    transition: all 0.3s;
+    z-index: 2;
+    top: 0;
+    overflow: scroll;
+}
+
+.container.hide{
+    top:100vh;
+    height: 0;
+}
+
+.header{
+    position: fixed;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    color: #5c5c5c;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: white;
+    font-size: 0.8rem;
+}
+
+.close{
+    position: absolute;
+    right:0px;
+    margin-right: 30px;
+    color:#fd5068;
+}
+
+.body{
+    position: absolute;
+    width: 100%;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fa;
+    margin-top: 40px;
+}
+.signOut{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+
+.signOut > button:first-child{
+    background: white;
+}
+
+.warning{
+    text-transform: uppercase;
+    color:#fd5068;
+    border: 2px solid #fd5068;
+    border-radius: 5px;
+    outline: none;
+}
+
+.colum{
+    padding-left: 10px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    color: #5c5c5c;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.colum > div > span {
+    margin-right: -10px;
+}
+
+.colum > div, .colum a{
+    display: flex;
+    align-items: center;
+}
+.colum a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.activeTheme > i{
+    color:purple;
+}
+
+.body > h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    color: #5c5c5c;
+}
+
+.body > div{
+    padding-left: 20px;
+}

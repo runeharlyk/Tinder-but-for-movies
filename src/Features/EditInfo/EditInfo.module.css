@@ -1,0 +1,80 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    position: absolute;
+    transition: all 0.3s;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+}
+
+.container.hide{
+    right:-100vw;
+    width: 0vw;
+}
+
+.header{
+    position: fixed;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    color: #5c5c5c;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: white;
+    font-size: 0.8rem;
+}
+
+.close{
+    position: absolute;
+    right:0px;
+    margin-right: 30px;
+    color:#fd5068;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    position: absolute;
+    width: 100%;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fa;
+    margin-top: 50px;
+}
+
+.topInfo{
+    font-size: 0.8rem;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.flexWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.interest{
+    width: fit-content;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0.1rem solid grey;
+    color: grey;
+    margin: 3px;
+    transition: all 0.05s;
+}
+
+.interest.active{
+    border: 0.1rem solid #fd5068;
+    color: #fd5068;
+}

@@ -1,0 +1,36 @@
+.header{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: inherit;
+}
+
+.headerWrap{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header :is(button){
+    background: transparent;
+    outline: none;
+    border: none;
+    color: lightgray;
+}
+
+.header :is(button) > i {
+    font-size: 2rem;
+}
+
+.header :is(button) > i {
+    transition: color 0.4s;
+}
+
+.header :is(a).active > button > i {
+    color:#fd5068;
+}

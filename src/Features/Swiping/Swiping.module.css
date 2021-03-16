@@ -1,0 +1,79 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.container{
+    width: 100vh;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    background-color: #f5f7fa;
+    user-select: none;
+}
+
+.movies{
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    z-index: 2;
+    max-height: calc(100vh - 153px);
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    width: 100vw;
+    background-color: inherit;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 60px;
+    padding: 16px 0;
+}
+
+.footer > button:hover {
+    transform: scale(1.2);
+}
+
+.footer :is(button){
+    background-color: white;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    box-shadow: 1px 2px 5px 0px rgb(0 0 0 / 9%);
+}
+.footer :is(button).redo{
+    color: #e9aa43;
+}
+.footer :is(button).nope{
+    color: #ec4e4e;
+}
+.footer :is(button).super_like{
+    color: #1fbcff;
+}
+.footer :is(button).like{
+    color: #04e08d;
+}
+.footer :is(button).bolt{
+    color: #964dd6;
+}
+
+.footer :is(button):nth-child(2n){
+    width: 70px;
+    height: 70px;
+}
+
+.footer :is(button) > i {
+    font-size: 2rem;
+}

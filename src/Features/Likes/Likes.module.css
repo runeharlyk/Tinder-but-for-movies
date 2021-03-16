@@ -1,0 +1,112 @@
+.container{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    background-color: #f5f7fa;
+}
+
+.movieGallery{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+.topbox{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    height: 20px;
+}
+.topbox :is(h2){
+    margin: 0;
+}
+
+.fill{
+    width: 50%;
+}
+
+.endBox{
+    margin: 10%;
+    text-align: center;
+}
+
+.ratedMovie{
+    width: 44%;
+    margin: 1%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid var(--action-color);
+}
+
+.ratedMovie > img {
+    width: 100%;
+}
+
+.ratedMovie .rating{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 20px;
+    text-align: center;
+    
+}
+
+.nope > div:after, .like > div:after, .super_like > div:after{
+    padding: 0 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: fit-content;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.0px );
+    -webkit-backdrop-filter: blur( 12.0px );
+    border-radius: 10px;
+
+    border: 2px solid var(--action-color);
+    color: var(--action-color);
+    transform: rotate(var(--action-rotation));
+}
+
+.nope{
+    --action-color: #ec4e4e;
+    --action-rotation:-20deg;
+}
+
+.like{
+    --action-rotation:20deg;
+    --action-color: #04e08d;
+}
+.super_like{
+    --action-color: #1fbcff;
+    --action-rotation:-20deg;
+}
+
+.nope > div:after{content: "Nope"}
+.like > div:after{content: "Like"}
+.super_like > div:after{content: "Super Like"}
+
+button.goUp{
+    z-index: 2;
+    position: absolute;
+    right: 70px;
+    top: 100px;
+    color: white;
+    background-color: #ff8100!important;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.goUp.active{
+    opacity: 1;
+}
