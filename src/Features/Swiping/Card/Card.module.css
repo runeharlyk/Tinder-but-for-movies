@@ -1,0 +1,130 @@
+.movie_card{
+    z-index: 1;
+    cursor: -webkit-grab;
+    width: calc(100% - 10px);
+    border-radius: 10px;
+    max-height: inherit;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+}
+
+.movie_card:not(:last-child, :nth-last-child(2), :nth-last-child(3)){
+    display: none;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    float: left;
+    z-index: 3;
+}
+
+.movie_card > img{
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.movie_card .movie_info{
+    background: rgba( 255, 255, 255, 0.75 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 15px;
+    color:#363636;
+    bottom: 70px; 
+    left: 15px;   
+    animation: fadein 0.15s;  
+}
+
+.movieBox{
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
+.movie_info :is(h2, p){
+    padding: 0px;
+    margin: 0;
+}
+
+/* CATEGORIES */
+.categories_list{
+    margin-top: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+.categories_list > li{
+    color:white;
+    padding: 5px 15px;
+    backdrop-filter: blur(4px);
+    width: fit-content;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.404);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.activeGenre{
+    border: 2px solid white;
+}
+
+/* CATEGORIES*/
+
+/* ACTION LABLE */
+.bottom_box{
+    position: absolute; 
+    bottom: 140px;
+    left: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action_label{
+    position: absolute; 
+    padding: 0 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: fit-content;
+
+    border: 5px solid var(--action-color);
+    color: var(--action-color);
+    transform: rotate(var(--action-rotation));
+}
+
+.movie_card .like{ 
+    --action-color: #04e08d;
+    --action-rotation:-20deg;
+    top: 50px;
+    left: 30px;
+}
+.movie_card .nope{ 
+    --action-rotation:20deg;
+    --action-color: #ec4e4e;
+    top: 50px;
+    right: 30px;
+}
+
+.movie_card .super_like{ 
+    --action-color: #1fbcff;
+    --action-rotation:-20deg;
+}
