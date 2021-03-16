@@ -7,8 +7,6 @@ import Card from "./Card/Card"
 const db = firebase.database();
 //https://api.themoviedb.org/3/discover/movie?
 //api_key=a9d0af555a3bf6a117089d98841fcd0e&language=en
-
-
 /*
     Make trailer viewable
     Show alternative pictures
