@@ -2,7 +2,7 @@
 
 This project was inspirred by an idea i hear on tiktok, and of cause Tinder [Create React App](https://github.com/facebook/create-react-app).
 
-(*Disclaimer*:)
+(*Disclaimer*: THIS APP IS NOT AN OFFICAL TINDER PRODUCT NOR IS IT AFFILIATED WITH TINDER IN ANY WAY)
 ## Available Scripts
 
 In the project directory, you can run:
