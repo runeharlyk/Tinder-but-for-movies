@@ -20,6 +20,29 @@
     background: transparent;
     float: left;
     z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overlay > div {
+    background-color: white;
+    padding: 20px;
+    height: inherit;
+    overflow-y: scroll;
+    font-size: 1.2rem;
+}
+
+.overlay > img {
+    width: 100%;
+    height: min-content;
+}
+
+.downButton{
+    position: absolute!important;
+    right: 20px;
+    top:34%;
+    color: white;
+    background-color: orangered!important;
 }
 
 .movie_card > img{

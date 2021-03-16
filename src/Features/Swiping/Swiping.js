@@ -29,10 +29,6 @@ const Swiping = () =>{
         return {genres:list};
     }
 
-    useEffect(async() => {
-        
-    },[])
-
     useEffect(() => {
         const id = MovieAction.id;
         const type = MovieAction.type;

@@ -2,9 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import { firebase } from "../../auth/initFirebase";
 import axios from 'axios';
 import Fab from '@material-ui/core/Fab';
-import Icon from '@material-ui/core/Icon';
 import styles from "./Likes.module.css"
-import Select from 'react-select';
 
 const db = firebase.database();
 
