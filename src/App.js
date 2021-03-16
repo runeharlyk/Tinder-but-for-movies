@@ -20,18 +20,18 @@ function App() {
       <Header></Header>
       <Switch>
           <Route exact path="/">
-            <Redirect to="/app/matches" />
+            <Redirect to="../app/matches" />
          </Route>
-          <Route path="/app/recs">
+          <Route path="../app/recs">
             <Swiping />
           </Route>
-          <Route path="/app/likes">
+          <Route path="../app/likes">
             <Likes />
           </Route>
-          <Route path="/app/matches">
+          <Route path="../app/matches">
             <Matches />
           </Route>
-          <Route path="/app/profile">
+          <Route path="../app/profile">
             <Profile />
           </Route>
       </Switch>

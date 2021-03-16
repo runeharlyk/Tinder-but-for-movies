@@ -5,122 +5,10 @@
     width: 100vw;
     height: 100vh;
     flex-direction: column;
-     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
 }
-
-.movingBackground{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #1a7ffa;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(110deg, #1a7ffa, #5de548);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(110deg, #1a7ffa, #5de548);
-    filter: blur( 1px );
-    -webkit-filter: blur( 1px );
-    z-index: -1;
-}
-
-.movingBackground > span{
-    position: absolute;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.movingBackground > span:nth-child(1n+1){
-    height: 25vh;
-    width: 25vh;
-}
-
-.movingBackground > span:nth-child(2n+2){
-    height: 10vh;
-    width: 10vh;
-}
-.movingBackground > span:nth-child(3n+3){
-    height: 15vh;
-    width: 15vh;
-    z-index: 3;
-}
-.movingBackground > span:nth-child(1){
-    animation: float-1 60s -60s linear infinite alternate;
-}
-.movingBackground > span:nth-child(2){
-    animation: float-2 60s -60s linear infinite alternate;
-}
-.movingBackground > span:nth-child(3){
-    animation: float-3 60s -60s linear infinite alternate;
-}
-.movingBackground > span:nth-child(4){
-    animation: float-4 60s -60s linear infinite alternate;
-}
-.movingBackground > span:nth-child(5){
-    animation: float-5 60s -60s linear infinite alternate;
-}
-.movingBackground > span:nth-child(6){
-    animation: float-6 60s -60s linear infinite alternate;
-}
-
-
-@keyframes float-1 {
-    from {
-      transform: translate(25vw, 0vh);
-    }
-    to {
-      transform: translate(35vw, 100vh);
-    }
-  }
-
-  @keyframes float-2 {
-    from {
-        transform: translate(90vw, 100vh);
-      }
-      to {
-        transform: translate(75vw, 60vh);
-      }
-    }
-
-  @keyframes float-3 {
-    from {
-        transform: translate(100vw, 45vh);
-      }
-      to {
-        transform: translate(0vw, 90vh);
-      }
-    }
-
-  @keyframes float-4 {
-    from {
-        transform: translate(0vw, 100vh);
-      }
-      to {
-        transform: translate(100vw, 0vh);
-      }
-    }
-
-  @keyframes float-5 {
-    from {
-        transform: translate(60vw, 0vh);
-      }
-      to {
-        transform: translate(90vw, 100vh);
-      }
-    }
-
-  @keyframes float-6 {
-    from {
-        transform: translate(97vw, 95vh);
-      }
-      to {
-        transform: translate(0vw, 20vh);
-      }
-    }
-
-
 
 .container{
     color: white;
@@ -146,7 +34,9 @@
     z-index: 2;
     font-size: 1.3rem;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    background: linear-gradient(to left, #38ef7da6, #008cff94);
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
     box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -158,11 +48,3 @@
     flex-direction: column;
     z-index: 1;
 }
-
-/*
-.buttonContainer::after{
-    content: "";
-    background: #1a7ffa;
-    height: 200px;
-    width: 200px;
-}*/
