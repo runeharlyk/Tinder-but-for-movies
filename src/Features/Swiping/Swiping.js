@@ -73,7 +73,7 @@ const Swiping = () =>{
                     movies.length===0?
                         (<div>No more fortnite!!!</div>)
                     :(
-                        <Card callback={setMovieAction} interests={interests} genreNames={genreNames} movie={movie}/>
+                        <Card callback={setMovieAction} key={i} interests={interests} genreNames={genreNames} movie={movie}/>
                     )
                 )):null}
             </div>
