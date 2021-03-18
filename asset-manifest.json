@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Tinder-but-for-movies/static/css/main.99f4cd01.chunk.css",
-    "main.js": "/Tinder-but-for-movies/static/js/main.35319c9e.chunk.js",
-    "main.js.map": "/Tinder-but-for-movies/static/js/main.35319c9e.chunk.js.map",
-    "runtime-main.js": "/Tinder-but-for-movies/static/js/runtime-main.8d934da7.js",
-    "runtime-main.js.map": "/Tinder-but-for-movies/static/js/runtime-main.8d934da7.js.map",
-    "static/js/2.16ee2b70.chunk.js": "/Tinder-but-for-movies/static/js/2.16ee2b70.chunk.js",
-    "static/js/2.16ee2b70.chunk.js.map": "/Tinder-but-for-movies/static/js/2.16ee2b70.chunk.js.map",
-    "static/js/3.0e8e2d8c.chunk.js": "/Tinder-but-for-movies/static/js/3.0e8e2d8c.chunk.js",
-    "static/js/3.0e8e2d8c.chunk.js.map": "/Tinder-but-for-movies/static/js/3.0e8e2d8c.chunk.js.map",
+    "main.css": "/Tinder-but-for-movies/static/css/main.73a81a4d.chunk.css",
+    "main.js": "/Tinder-but-for-movies/static/js/main.19f137e4.chunk.js",
+    "main.js.map": "/Tinder-but-for-movies/static/js/main.19f137e4.chunk.js.map",
+    "runtime-main.js": "/Tinder-but-for-movies/static/js/runtime-main.47090bf8.js",
+    "runtime-main.js.map": "/Tinder-but-for-movies/static/js/runtime-main.47090bf8.js.map",
+    "static/js/2.3486e962.chunk.js": "/Tinder-but-for-movies/static/js/2.3486e962.chunk.js",
+    "static/js/2.3486e962.chunk.js.map": "/Tinder-but-for-movies/static/js/2.3486e962.chunk.js.map",
+    "static/js/3.15fe1f33.chunk.js": "/Tinder-but-for-movies/static/js/3.15fe1f33.chunk.js",
+    "static/js/3.15fe1f33.chunk.js.map": "/Tinder-but-for-movies/static/js/3.15fe1f33.chunk.js.map",
     "index.html": "/Tinder-but-for-movies/index.html",
-    "static/css/main.99f4cd01.chunk.css.map": "/Tinder-but-for-movies/static/css/main.99f4cd01.chunk.css.map",
-    "static/js/2.16ee2b70.chunk.js.LICENSE.txt": "/Tinder-but-for-movies/static/js/2.16ee2b70.chunk.js.LICENSE.txt"
+    "static/css/main.73a81a4d.chunk.css.map": "/Tinder-but-for-movies/static/css/main.73a81a4d.chunk.css.map",
+    "static/js/2.3486e962.chunk.js.LICENSE.txt": "/Tinder-but-for-movies/static/js/2.3486e962.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d934da7.js",
-    "static/js/2.16ee2b70.chunk.js",
-    "static/css/main.99f4cd01.chunk.css",
-    "static/js/main.35319c9e.chunk.js"
+    "static/js/runtime-main.47090bf8.js",
+    "static/js/2.3486e962.chunk.js",
+    "static/css/main.73a81a4d.chunk.css",
+    "static/js/main.19f137e4.chunk.js"
   ]
 }
