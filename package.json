@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage":"https://runeharlyk.github.io/Tinder-but-for-movies",
+=======
+  "homepage":"http://runeharlyk.github.io/Tinder-but-for-movies/",
+>>>>>>> 8d338070635cc482ff467f936c428d1f7fdbe2f7
   "name": "Tinder-but-for-movies",
   "version": "0.1.0",
   "private": true,

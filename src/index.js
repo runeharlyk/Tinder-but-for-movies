@@ -20,6 +20,7 @@ import {FirebaseDatabaseProvider} from "@react-firebase/database";
 
 /*
 TODO LIST
+Push nitifications
 intrest and genres
 groups, people
 */
