@@ -19,11 +19,13 @@ function App() {
     <Router className="App">
       <Header></Header>
       <Switch>
-          <Route exact path="/">
-            <Redirect to="/Tinder-but-for-movies/app/matches" />
+        <Route exact path="/">
+          <Redirect to="/Tinder-but-for-movies/app/recs" />
+        </Route>
+        <Route exact path="/Tinder-but-for-movies/">
+          <Redirect to="/Tinder-but-for-movies/app/recs" />
          </Route>
-<<<<<<< HEAD
-          <Route path="/Tinder-but-for-movies/app/recs">
+        <Route path="/Tinder-but-for-movies/app/recs">
             <Swiping />
           </Route>
           <Route path="/Tinder-but-for-movies/app/likes">
@@ -33,18 +35,6 @@ function App() {
             <Matches />
           </Route>
           <Route path="/Tinder-but-for-movies/app/profile">
-=======
-          <Route path="./app/recs">
-            <Swiping />
-          </Route>
-          <Route path="./app/likes">
-            <Likes />
-          </Route>
-          <Route path="./app/matches">
-            <Matches />
-          </Route>
-          <Route path="./app/profile">
->>>>>>> 8d338070635cc482ff467f936c428d1f7fdbe2f7
             <Profile />
           </Route>
       </Switch>
